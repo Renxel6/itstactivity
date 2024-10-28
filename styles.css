@@ -1,0 +1,123 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #007a18;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0dd434;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+button[type="button"] {
+    background-color: red;
+    margin-top: 10px;
+}
+
+.info-box {
+    background-color: white; /* White background */
+    padding: 20px; /* Space inside the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Maximum width of the box */
+    margin: 20px auto; /* Center the box horizontally with margin */
+}
+
+/* Make the logo responsive */
+.logo {
+    height: auto;
+    max-width: 100px; /* Adjust as needed */
+}
+
+/* Make the main image responsive */
+.welcome-image {
+    width: 50%;         /* Makes the image scale to fit its container */
+    height: auto;        /* Maintains the aspect ratio */
+    max-width: 700px;    /* Optional: Limits the maximum width */
+    display: block;      /* Centers the image if it's in a container */
+    margin: 20px auto;   /* Optional: Centers image and adds spacing */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .info-box {
+        padding: 20px;
+    }
+
+    /* Adjust font sizes for smaller screens */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
